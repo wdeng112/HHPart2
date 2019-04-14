@@ -28,9 +28,9 @@ def detect_faces(path):
     print('Faces:')
 
     for face in faces:
-        print('anger: {}'.format(likelihood_name[face.anger_likelihood]))
-        print('joy: {}'.format(likelihood_name[face.joy_likelihood]))
-        print('surprise: {}'.format(likelihood_name[face.surprise_likelihood]))
+        print('drowsy: {}'.format(likelihood_name[face.anger_likelihood]))
+        print('confident: {}'.format(likelihood_name[face.joy_likelihood]))
+        print('shocked: {}'.format(likelihood_name[face.surprise_likelihood]))
 
         vertices = (['({},{})'.format(vertex.x, vertex.y)
                     for vertex in face.bounding_poly.vertices])
